@@ -9,6 +9,8 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f8f8f8;
     color: #333;
+    /* NOVO/AJUSTADO: Adiciona espaço no final da página para o rodapé fixo */
+    padding-bottom: 60px; 
 }
 
 /* Barra de Navegação */
@@ -38,10 +40,17 @@ body {
     color: #fff;
     text-decoration: none;
     font-size: 16px;
+    transition: color 0.3s ease;
 }
 
 .nav-links ul li a:hover {
     color: #f1c40f;
+}
+
+/* Estilo específico para o contador do carrinho */
+.nav-links ul li a.cart-link {
+    font-weight: bold;
+    color: #f1c40f; /* Cor de destaque para o carrinho */
 }
 
 /* Seção de Produtos */
@@ -114,7 +123,10 @@ body {
     color: #fff;
     text-align: center;
     padding: 15px;
+    height: 50px; /* Altura do rodapé */
+    line-height: 20px;
     position: fixed;
     bottom: 0;
     width: 100%;
+    z-index: 10; /* Garante que o rodapé fique acima de outros elementos */
 }
