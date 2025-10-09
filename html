@@ -8,7 +8,6 @@
 </head>
 <body>
 
-    <!-- Barra de Navegação -->
     <header class="navbar">
         <div class="logo">
             <h1>Loja E-commerce</h1>
@@ -19,18 +18,18 @@
                 <li><a href="#">Produtos</a></li>
                 <li><a href="#">Sobre</a></li>
                 <li><a href="#">Contato</a></li>
+                <li><a href="#" class="cart-link">🛒 Carrinho (<span id="cart-count">0</span>)</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Seção de Produtos -->
     <section class="product-section">
         <div class="product-card">
             <img src="https://via.placeholder.com/300" alt="Produto 1">
             <h3>Produto 1</h3>
             <p>Descrição do produto.</p>
             <span class="price">R$ 99,99</span>
-            <button>Comprar</button>
+            <button class="add-to-cart" data-name="Produto 1" data-price="99.99">Comprar</button>
         </div>
 
         <div class="product-card">
@@ -38,7 +37,7 @@
             <h3>Produto 2</h3>
             <p>Descrição do produto.</p>
             <span class="price">R$ 149,99</span>
-            <button>Comprar</button>
+            <button class="add-to-cart" data-name="Produto 2" data-price="149.99">Comprar</button>
         </div>
 
         <div class="product-card">
@@ -46,14 +45,14 @@
             <h3>Produto 3</h3>
             <p>Descrição do produto.</p>
             <span class="price">R$ 129,99</span>
-            <button>Comprar</button>
+            <button class="add-to-cart" data-name="Produto 3" data-price="129.99">Comprar</button>
         </div>
     </section>
 
-    <!-- Rodapé -->
     <footer class="footer">
         <p>&copy; 2025 Loja E-commerce. Todos os direitos reservados.</p>
     </footer>
-
+    
+    <script src="script.js"></script>
 </body>
 </html>
