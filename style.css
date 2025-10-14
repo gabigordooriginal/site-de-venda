@@ -1,4 +1,4 @@
-/* Estilos Gerais */
+/* RESET BÁSICO */
 * {
     margin: 0;
     padding: 0;
@@ -6,127 +6,231 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f8f8;
-    color: #333;
-    /* NOVO/AJUSTADO: Adiciona espaço no final da página para o rodapé fixo */
-    padding-bottom: 60px; 
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a2e; /* Fundo escuro */
+    color: #e4e4e4; /* Cor do texto claro */
+    line-height: 1.6;
 }
 
-/* Barra de Navegação */
-.navbar {
-    background-color: #1a1a1a;
-    padding: 10px 20px;
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* CABEÇALHO */
+.header {
+    background-color: #0f0f1a; /* Fundo mais escuro para o cabeçalho */
+    padding: 15px 0;
+    border-bottom: 3px solid #00bcd4; /* Detalhe em azul ciano */
+}
+
+.container-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.navbar .logo h1 {
-    color: #fff;
-    font-size: 24px;
-}
-
-.nav-links ul {
-    list-style: none;
-    display: flex;
-}
-
-.nav-links ul li {
-    margin-left: 20px;
-}
-
-.nav-links ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-    transition: color 0.3s ease;
-}
-
-.nav-links ul li a:hover {
-    color: #f1c40f;
-}
-
-/* Estilo específico para o contador do carrinho */
-.nav-links ul li a.cart-link {
+.logo {
+    color: #00bcd4;
+    font-size: 1.8em;
     font-weight: bold;
-    color: #f1c40f; /* Cor de destaque para o carrinho */
 }
 
-/* Seção de Produtos */
-.product-section {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 20px;
-    gap: 20px;
+.nav a {
+    color: #e4e4e4;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #ff5722; /* Laranja vibrante no hover */
+}
+
+.btn-login, .btn-cart {
+    color: #e4e4e4;
+    text-decoration: none;
+    margin-left: 10px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    background-color: #3f51b5; /* Azul primário */
+    transition: background-color 0.3s;
+}
+
+.btn-login:hover, .btn-cart:hover {
+    background-color: #5c6bc0;
+}
+
+/* SEÇÃO DESTAQUE (HERO) */
+.hero {
+    position: relative;
+    text-align: center;
+    padding: 50px 0;
+    margin-bottom: 40px;
+    background-color: #2a2a4a;
+}
+
+.hero-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo escuro semi-transparente para o texto */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: #ff5722;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #e64a19;
+}
+
+/* GRID DE PRODUTOS */
+h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #00bcd4;
+    border-bottom: 2px solid #00bcd4;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding-bottom: 40px;
 }
 
 .product-card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 20px;
-    width: 280px;
-    text-align: center;
+    background-color: #1f1f3a;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding-bottom: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .product-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5), 0 0 15px #00bcd4; /* Efeito de brilho */
 }
 
 .product-card img {
     width: 100%;
     height: auto;
-    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 10px;
 }
 
 .product-card h3 {
-    font-size: 20px;
+    font-size: 1.5em;
     margin: 10px 0;
+    color: #ff5722;
 }
 
-.product-card p {
-    color: #777;
-    font-size: 14px;
-    margin: 5px 0;
-}
-
-.product-card .price {
-    font-size: 18px;
+.price {
+    font-size: 1.3em;
     font-weight: bold;
-    color: #e74c3c;
+    color: #4CAF50; /* Cor para o preço */
+    margin-bottom: 10px;
 }
 
-.product-card button {
-    background-color: #27ae60;
-    color: #fff;
+.old-price {
+    text-decoration: line-through;
+    color: #9e9e9e;
+    font-size: 0.9em;
+    font-weight: normal;
+}
+
+.btn-add-cart {
+    background-color: #3f51b5;
+    color: white;
     border: none;
-    padding: 10px 15px;
-    margin-top: 10px;
-    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 4px;
     cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s;
 }
 
-.product-card button:hover {
-    background-color: #2ecc71;
+.btn-add-cart:hover {
+    background-color: #5c6bc0;
 }
 
-/* Rodapé */
-.footer {
-    background-color: #1a1a1a;
-    color: #fff;
+/* EM BREVE SEÇÃO */
+.coming-soon {
+    background-color: #1f1f3a;
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 30px;
+    margin-bottom: 40px;
     text-align: center;
-    padding: 15px;
-    height: 50px; /* Altura do rodapé */
-    line-height: 20px;
-    position: fixed;
-    bottom: 0;
+}
+
+.coming-soon img {
     width: 100%;
-    z-index: 10; /* Garante que o rodapé fique acima de outros elementos */
+    max-width: 600px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* RODAPÉ */
+.footer {
+    background-color: #0f0f1a;
+    color: #aaa;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #333;
+}
+
+.footer-links a {
+    color: #aaa;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #00bcd4;
+}
+
+/* JAVASCRIPT: Efeito de destaque ao clicar */
+.highlight {
+    border: 3px solid yellow !important;
+    box-shadow: 0 0 20px yellow !important;
 }
