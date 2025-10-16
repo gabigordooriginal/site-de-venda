@@ -3,88 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GAMES STORE - Sua Loja de Jogos Digitais</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <title>Minha Loja Moderna</title>
+    <link rel="stylesheet" href="style.css"> </head>
 <body>
 
     <header class="header">
-        <div class="container-nav">
-            <h1 class="logo">GAME HUB</h1>
-            <nav class="nav">
-                <a href="#destaques">Destaques</a>
-                <a href="#produtos">Loja</a>
-                <a href="#">Comunidade</a>
-                <a href="#">Suporte</a>
-            </nav>
-            <div class="user-actions">
-                <a href="#" class="btn-login">Login</a>
-                <a href="#" class="btn-cart">Carrinho (0)</a>
-            </div>
-        </div>
+        <div class="logo">Minha Loja</div>
+        <nav class="nav">
+            <a href="#home">Início</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#contato">Contato</a>
+            <button class="cart-button">🛒 Carrinho (0)</button>
+        </nav>
     </header>
 
-    <section id="destaques" class="hero">
-        <div class="hero-content">
-            <h2>Lançamento da Semana!</h2>
-            <p>Um RPG épico com gráficos incríveis e uma história que te prenderá por horas.</p>
-            <a href="#" class="btn-primary">Compre Agora - R$ 199,90</a>
-        </div>
-        <img src="https://via.placeholder.com/1200x400?text=Jogo+Destaque+Principal" alt="Banner de destaque do jogo" class="hero-image">
+    <section class="hero">
+        <h1>Ofertas Incríveis!</h1>
+        <p>Aproveite nossa seleção de produtos com preços especiais.</p>
+        <a href="#produtos" class="cta-button">Ver Produtos</a>
     </section>
 
-    <main id="produtos" class="container">
-        <h2>Jogos em Promoção</h2>
-        <div class="product-grid">
+    <section id="produtos" class="products-container">
+        <h2>Produtos em Destaque</h2>
 
-            <div class="product-card" data-jogo="Aventura Épica">
-                <img src="https://via.placeholder.com/300x180?text=Aventura+Epica" alt="Capa do jogo Aventura Épica">
-                <h3>Aventura Épica</h3>
-                <p class="price">R$ 99,99 <span class="old-price">R$ 149,90</span></p>
-                <button class="btn-add-cart">Adicionar ao Carrinho</button>
-            </div>
-
-            <div class="product-card" data-jogo="Simulador Urbano">
-                <img src="https://via.placeholder.com/300x180?text=Simulador+Urbano" alt="Capa do jogo Simulador Urbano">
-                <h3>Simulador Urbano</h3>
-                <p class="price">R$ 49,90</p>
-                <button class="btn-add-cart">Adicionar ao Carrinho</button>
-            </div>
-
-            <div class="product-card" data-jogo="Ficção Científica">
-                <img src="https://via.placeholder.com/300x180?text=Ficcao+Cientifica" alt="Capa do jogo Ficção Científica">
-                <h3>Ficção Científica 7</h3>
-                <p class="price">R$ 159,00</p>
-                <button class="btn-add-cart">Adicionar ao Carrinho</button>
-            </div>
-            
-            <div class="product-card" data-jogo="Indie Clássico">
-                <img src="https://via.placeholder.com/300x180?text=Indie+Classico" alt="Capa do jogo Indie Clássico">
-                <h3>Indie Clássico</h3>
-                <p class="price">R$ 19,90 <span class="old-price">R$ 39,90</span></p>
-                <button class="btn-add-cart">Adicionar ao Carrinho</button>
-            </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x200?text=Produto+1" alt="Nome do Produto 1" class="product-image">
+            <h3>Nome do Produto 1</h3>
+            <p class="price">R$ 149,90</p>
+            <p class="description">Descrição breve e atrativa do Produto 1.</p>
+            <button class="add-to-cart">Adicionar ao Carrinho</button>
         </div>
 
-        <h2 class="section-title">Em Breve</h2>
-        <div class="coming-soon">
-            <div class="game-info">
-                <img src="friday.jpg" alt="Banner de jogo futuro">
-                <p>O título mais aguardado de 2026 chega em Janeiro. Adicione à sua Lista de Desejos!</p>
-                <button class="btn-add-cart">Adicionar Friday The 13 The Game a Lista de Desejos</button>
-            </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x200?text=Produto+2" alt="Nome do Produto 2" class="product-image">
+            <h3>Nome do Produto 2</h3>
+            <p class="price">R$ 99,90</p>
+            <p class="description">Descrição breve e atrativa do Produto 2.</p>
+            <button class="add-to-cart">Adicionar ao Carrinho</button>
+        </div>
+        
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x200?text=Fone+Bluetooth" alt="Fone de Ouvido Bluetooth" class="product-image">
+            <h3>Fone de Ouvido Premium</h3>
+            <p class="price">R$ 279,00</p>
+            <p class="description">Áudio de alta qualidade e bateria de longa duração.</p>
+            <button class="add-to-cart">Adicionar ao Carrinho</button>
         </div>
 
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 GAME HUB. Todos os direitos reservados.</p>
-            <div class="footer-links">
-                <a href="#">Termos de Serviço</a> |
-                <a href="#">Política de Privacidade</a>
-            </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x200?text=Smartwatch" alt="Smartwatch Esportivo" class="product-image">
+            <h3>Smartwatch Esportivo</h3>
+            <p class="price">R$ 499,50</p>
+            <p class="description">Monitore seus exercícios e receba notificações.</p>
+            <button class="add-to-cart">Adicionar ao Carrinho</button>
         </div>
+        
+        </section>
+
+    <footer id="contato" class="footer">
+        <p>&copy; 2025 Minha Loja Moderna. Todos os direitos reservados.</p>
+        <p>Entre em contato: loja@exemplo.com</p>
     </footer>
 
     <script src="script.js"></script>
