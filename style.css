@@ -8,7 +8,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f9;
+    background-color: #010130;
     color: #333;
 }
 
@@ -19,13 +19,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(194, 192, 192, 0.1);
 }
 
 .logo {
     font-size: 1.8em;
     font-weight: bold;
-    color: #007bff; /* Cor principal moderna */
+    color: #ff0000; /* Cor principal moderna */
 }
 
 .nav a {
@@ -37,7 +37,7 @@ body {
 }
 
 .nav a:hover {
-    color: #007bff;
+    color: #ff0000;
 }
 
 .cart-button {
@@ -46,14 +46,14 @@ body {
     font-size: 1em;
     cursor: pointer;
     margin-left: 20px;
-    color: #007bff;
+    color: #09ff00;
     font-weight: bold;
 }
 
 /* ------------------ BANNER PRINCIPAL (HERO) ------------------ */
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1200x400/007bff/ffffff?text=Banner+Loja') center center/cover;
-    color: white;
+    color: rgb(247, 245, 245);
     text-align: center;
     padding: 100px 20px;
     margin-bottom: 40px;
@@ -67,7 +67,7 @@ body {
 .cta-button {
     display: inline-block;
     background-color: #ff5722; /* Cor de destaque (laranja/vermelho) */
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 12px 25px;
     text-decoration: none;
     border-radius: 5px;
@@ -90,24 +90,24 @@ body {
 .products-container h2 {
     font-size: 2em;
     margin-bottom: 30px;
-    color: #333;
+    color: #ffffff;
 }
 
 .product-card {
-    background-color: white;
-    border: 1px solid #ddd;
+    background-color: rgb(126, 125, 125);
+    border: 1px solid #000000;
     border-radius: 8px;
     padding: 20px;
     margin: 15px;
     width: 300px; /* Largura fixa para os cards */
     display: inline-block; /* Permite que os cards fiquem lado a lado */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 8px rgba(243, 243, 243, 0.05);
     transition: transform 0.3s;
 }
 
 .product-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 16px rgba(255, 44, 44, 0.1);
 }
 
 .product-image {
@@ -120,12 +120,12 @@ body {
 .product-card h3 {
     font-size: 1.4em;
     margin-bottom: 10px;
-    color: #007bff;
+    color: #741313;
 }
 
 .price {
     font-size: 1.2em;
-    color: #ff5722; /* Cor de preço */
+    color: #1cc5d1; /* Cor de preço */
     font-weight: bold;
     margin-bottom: 10px;
 }
